@@ -1,11 +1,41 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
----
-
+import '../styles/global.css';
+--- 
 <Layout>
-	<Welcome />
+  <header class="header">
+    <div class="logo"><img src="/images/logo.jpg" alt="Logo Coworking MGROUP" /></div>
+    <!--Menu de Navegacion -->
+    <nav class="nav">
+      <ul>
+        <a href="/">Inicio</a>
+        <a href="/about">Quien Somos</a>
+        <a href="/services">Planes</a>
+        <a href="/contact">Contacto</a>
+        <a>|</a>
+        <a href="mailto:info@masmgroup.com">info@masmgroup.com</a>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <img src="/images/hero-bg.webp" alt="Hero Background" class="hero-img">
+      <div class="hero-content">
+         <div class="hero-text"> 
+           <h1>Encuentra tu espacio de coworking ideal en Asunción</h1>
+           <p>Descubre un espacio de coworking diseñado para innovadores, creadores y emprendedores</p>
+         </div>
+           <a href="/services" class="btn-hero">Solicita un tour</a>
+       </div>
+    </section>
+    <section class="espacios">
+      <h2>Espacios para cada necesidad</h2>
+      
+      <!-- Aquí irán las tarjetas de los espacios -->
+    </section>
+    <section class="features">
+        <h2>Características premium de nuestros espacios de coworking</h2>
+    </section>
 </Layout>
+
+
+  
