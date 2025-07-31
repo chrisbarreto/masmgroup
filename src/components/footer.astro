@@ -1,0 +1,98 @@
+---
+// filepath: c:\Users\Administrator\masmgroup\masmgroup\src\components\Footer.astro
+---
+<footer class="footer">
+  <div class="footer-main">
+    <div class="footer-logo">
+      <!-- Reemplaza por tu logo o nombre -->
+      <img src="images/+mgroupWhite.svg" alt="Logo MASMGroup" />
+    </div>
+    <nav class="footer-nav">
+      <div> 
+        <p> <a href="https://maps.app.goo.gl/Lv65D6sdmhLZT2XA8" target="_blank" rel="noopener noreferrer"><img src="images/mapsLogo.svg" alt="Ubicacion" /></a>
+        Cirilo A. Rivarola 7170 Esq, Mayor Duarte </p>
+        <p>Asunción, Planta Alta</p>
+      </div>
+    </nav>
+    <div class="footer-social">
+      
+      <a href="https://api.whatsapp.com/send?phone=595991856331" target="_blank" rel="noopener noreferrer"><img src="images/whatsappLogo.png" alt="WhatsApp" /></a>
+      <a href="https://www.facebook.com/masm.arq/" target="_blank" rel="noopener noreferrer"><img src="images/facebook logo.svg" alt="Facebook" /></a>
+      <a href="https://www.instagram.com/masm.arq/" target="_blank" rel="noopener noreferrer"><img src="images/instagramLogo.png" alt="Instagram" /></a>
+      <a href="https://www.linkedin.com/in/marcial-barreto-571486226/" target="_blank" rel="noopener noreferrer"><img src="images/linkedinLogo.png" alt="LinkedIn" /></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 MASMGroup. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<style>
+.footer {
+  background: #2d3047;
+  color: #fff;
+  padding: 32px 0 12px 0;
+}
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #444;
+}
+.footer-logo img {
+  height: 40px;
+}
+.footer-nav a {
+  color: #fff;
+  margin: 0 16px;
+  text-decoration: none;
+  line-height: 1.2;
+}
+.footer-social a img {
+  width: 24px;
+  margin-left: 12px;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+@media (max-width: 700px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+  .footer-logo,
+  .footer-nav {
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-social {
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;      /* Mantiene los íconos en fila */
+    justify-content: center;  /* Centra los íconos horizontalmente */
+    align-items: center;
+  }
+  .footer-social a img {
+    margin-left: 8px;
+    width: 28px;
+  }
+  .footer-bottom {
+    font-size: 13px;
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+</style>

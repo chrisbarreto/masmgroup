@@ -125,6 +125,36 @@ width: fit-content; /* Ajusta el ancho automáticamente */
  margin-top: 40.96px; /* Mueve el botón hacia abajo */
 }
 
+
+.espacios-text {
+    margin-top: 500px; /* Mueve el texto hacia abajo */
+    margin-left: 50px; /* Posición desde la izquierda */
+    max-width: 950px; /* Limita el ancho del contenedor */
+    
+    padding: 40px; /* Espaciado interno */
+    
+}
+
+.btn-espacios {
+display: flex;
+padding: 15.96px 42.56px;
+justify-content: center;
+align-items: center;
+gap: 13.3px;
+color:#fff ;
+background-color:#2E134B ; /* Agrega un color de fondo */
+border-radius:  62.51px; /* Agrega bordes redondeados */
+font-family: Roboto, sans-serif; /* Agrega fallback a la fuente */
+font-size: 21.28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+width: fit-content; /* Ajusta el ancho automáticamente */
+ text-decoration: none; 
+ margin-left: 50px; /* Reducido de 50px para mover más hacia la izquierda */
+ margin-top: 40.96px; /* Mueve el botón hacia abajo */
+}
+
 /* Media queries para móvil */
 @media (max-width: 768px) {
   .hero-text {
@@ -180,7 +210,13 @@ width: fit-content; /* Ajusta el ancho automáticamente */
   }
 }
 
+
 .espacios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Centra el contenido horizontalmente */
+  min-height: 100vh;
   position: relative; /* Permite posicionar el contenido sobre la imagen */
   text-align: left; /* Cambiado de center a left */
   color: #fff; /* Cambia el color del texto */
@@ -197,10 +233,11 @@ width: fit-content; /* Ajusta el ancho automáticamente */
   font-family: 'Poppins', sans-serif; /* Cambia la fuente del texto */
   font-size: 36px; /* Ajusta el tamaño de la fuente */
   font-weight: 500; /* Cambia el peso de la fuente */
-  margin: 0; /* Elimina márgenes externos */
+  margin-top:0; /* Elimina márgenes externos */
+  margin-left: 50px; /* Elimina márgenes externos */
   padding: 0; /* Elimina espaciado interno */
   color: #000000; /* Cambia el color del texto */
-  line-height: 120%;
+  line-height: 100%;
 }
 
 .features {
@@ -225,4 +262,34 @@ width: fit-content; /* Ajusta el ancho automáticamente */
   padding: 0; /* Elimina espaciado interno */
   color: #000000; /* Cambia el color del texto */
   line-height: 120%;
+}
+
+.footer {
+  background: #2d3047; /* Cambiado a un color más oscuro */
+  color: #fff; /* Color del texto */
+  padding: 32px 0 12px 0; /* Espaciado interno */
+  text-align: center; /* Centra el contenido */
+  font-family: 'Open Sans', sans-serif; /* Fuente del texto */
+}
+
+.footer-nav img {
+  height: 2em;      /* Igual al tamaño de la fuente del texto */
+  vertical-align: middle; /* Centra el ícono con el texto */
+  margin-right: -10px;      /* Espacio entre el ícono y el texto */
+}
+
+.espacio-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: #2E134B;
+  margin: 8px 0 4px 0;
+  text-align: center;
+}
+
+.espacio-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 8px;
+  text-align: left;
 }

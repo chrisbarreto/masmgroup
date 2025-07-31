@@ -1,5 +1,126 @@
-    <section class="espacios">
-      <h2>Espacios para cada necesidad en Asunción</h2>
+<section class="espacios">
+  <div class="espacios-titulos">
+    <h2>Espacios para cada necesidad</h2>
+    <p class="btn-espacios">Conoce todas las áreas -></p>
+  </div>
 
-      <!-- Aquí irán las tarjetas de los espacios -->
-    </section>
+  <div class="espacios-cards">
+    <div class="espacio-card">
+      <a href="/silver" target="_blank" rel="noopener noreferrer">
+        <img src="/images/silver.jpeg" alt="Espacio Silver" />
+      </a>
+      <h3>Espacio Silver</h3>
+      <p>Reuniones fluidas en un entorno inspirador.</p>
+      <span>8 personas</span>
+    </div>
+    <div class="espacio-card">
+      <a href="/burt" target="_blank" rel="noopener noreferrer">
+        <img src="/images/burt.jpeg" alt="Espacio Burt" />
+      </a>
+      <h3>Espacio Burt</h3>
+      <p>Espacio versátil para equipos dinámicos.</p>
+      <span>8 personas</span>
+    </div>
+    <div class="espacio-card"> 
+      <a href="/misiones" target="_blank" rel="noopener noreferrer">
+        <img src="/images/misiones.jpg" alt="Espacio Misiones" />
+      </a>
+      <h3>Espacio Misiones</h3>
+      <p>Espacio premium para sesiones de impacto.</p>
+      <span>10 personas</span>
+    </div>
+    <!-- Agrega más tarjetas según tus espacios -->
+  </div>
+</section>
+
+<style>
+.espacios {
+  display: flex;                /* Usa flexbox para organizar los hijos */
+  flex-direction: row;          /* Títulos a la izquierda, tarjetas a la derecha */
+  justify-content: space-between;/* Separa los dos bloques al máximo */
+  align-items: center;          /* Centra verticalmente ambos bloques */
+  min-height: 70vh;             /* Altura mínima para centrar verticalmente */
+}
+
+.espacios-titulos {
+  flex: 1;                      /* Ocupa el espacio disponible a la izquierda */
+  text-align: left;             /* Alinea los títulos a la izquierda */
+}
+
+.espacios-cards {
+  display: flex;                /* Muestra las tarjetas en fila horizontal */
+  flex-direction: row;          /* Las tarjetas se colocan en fila */
+  gap: 24px;                    /* Espacio entre cada tarjeta */
+  padding: 24px 0;              /* Espaciado arriba y abajo del contenedor */
+}
+
+.espacio-card {
+  min-width: 220px;             /* Ancho mínimo de cada tarjeta */
+  max-width: 240px;             /* Ancho máximo de cada tarjeta */
+  background: #fff;             /* Fondo blanco para la tarjeta */
+  border-radius: 5px;           /* Bordes redondeados */
+  box-shadow: 0 2px 12px rgba(46,19,75,0.10); /* Sombra suave */
+  padding: 16px;                /* Espaciado interno de la tarjeta */
+  display: flex;                /* Flexbox para el contenido interno */
+  flex-direction: column;       /* Apila el contenido verticalmente */
+  align-items: center;          /* Centra el contenido horizontalmente */
+}
+
+.espacio-card img {
+  width: 220px;                 /* Tamaño original del recuadro de la imagen */
+  height: 140px;                /* Altura original del recuadro de la imagen */
+  object-fit: cover;            /* Recorta la imagen para que no se deforme */
+  border-radius: 5px;           /* Bordes redondeados en la imagen */
+  margin-bottom: 12px;          /* Espacio debajo de la imagen */
+}
+
+.espacio-card h3 {
+  font-size: 1.1rem;
+  color: #2E134B;
+  margin: 8px 0 4px 0;
+  text-align: center;
+}
+
+.espacio-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Estilos para móviles */
+@media (max-width: 700px) {
+  .espacios {
+    flex-direction: column;      /* Apila títulos y tarjetas verticalmente */
+    align-items: center;         /* Centra todo horizontalmente */
+    min-height: auto;            /* Quita la altura mínima */
+    width: 100vw;                /* Ocupa todo el ancho de la ventana */
+    max-width: 480px;            /* Limita el ancho máximo en móvil */
+    margin: 0 auto;              /* Centra el contenedor */
+    padding: 0 12px;             /* Espacio lateral más uniforme */
+    box-sizing: border-box;      /* Incluye el padding en el ancho */
+  }
+  .espacios-titulos {
+    width: 100%;                 /* Ocupa todo el ancho disponible */
+    text-align: center;          /* Centra el texto */
+    margin-bottom: 12px;         /* Menos espacio debajo de los títulos */
+  }
+  .espacios-titulos h2 {
+    margin-bottom: 8px;          /* Menos espacio entre h2 y el botón */
+    width: 100%;                 /* Ocupa todo el ancho disponible */
+    text-align: center;          /* Centra el texto */
+    margin-left: 0 !important;   /* Elimina cualquier desplazamiento a la derecha */
+  }
+  .btn-espacios {
+    margin-top: 0 !important;    /* Elimina espacio extra arriba del botón */
+    margin-bottom: 0 !important; /* Elimina espacio extra abajo del botón */
+    margin-left: 0 !important;   /* Centra el botón */
+  }
+  .espacios-cards {
+    flex-direction: column;      /* Apila las tarjetas verticalmente */
+    align-items: center;         /* Centra las tarjetas */
+    gap: 18px;                  /* Espacio entre tarjetas */
+    padding: 0;                  /* Sin espaciado extra */
+  }
+}
+</style>
