@@ -223,9 +223,9 @@ width: fit-content; /* Ajusta el ancho automáticamente */
   margin: 0; /* Elimina márgenes externos */
   margin-top: 0; /* Empuja el Hero hacia arriba para que cubra el espacio del header */
   padding: 0; /* Elimina el espaciado interno */
-  padding-top: 0; /* Compensa el contenido para que no se oculte detrás del header */
+  padding-top: 60px; /* Compensa el contenido para que no se oculte detrás del header */
   min-height: 100vh; /* Ajusta la altura según el tamaño de la ventana */
-  margin-top: -60px; /* Solo la altura exacta del header */
+  margin-top: 0; /* Solo la altura exacta del header */
   padding-top: 60px; /* Compensación exacta del header */
   background-color:rgba(46, 19, 75, 0.08); ;
 }
@@ -238,31 +238,9 @@ width: fit-content; /* Ajusta el ancho automáticamente */
   padding: 0; /* Elimina espaciado interno */
   color: #000000; /* Cambia el color del texto */
   line-height: 100%;
+  
 }
 
-.features {
-  position: relative; /* Permite posicionar el contenido sobre la imagen */
-  text-align: left; /* Cambiado de center a left */
-  color: #ffffff; /* Cambia el color del texto */
-  margin: 0; /* Elimina márgenes externos */
-  margin-top: 0; /* Empuja el Hero hacia arriba para que cubra el espacio del header */
-  padding: 0; /* Elimina el espaciado interno */
-  padding-top: 0; /* Compensa el contenido para que no se oculte detrás del header */
-  min-height: 100vh; /* Ajusta la altura según el tamaño de la ventana */
-  margin-top: -60px; /* Solo la altura exacta del header */
-  padding-top: 60px; /* Compensación exacta del header */
-  background-color:rgba(255, 255, 255, 0.0); ;
-}
-
-.features h2 {
-  font-family: 'Poppins', sans-serif; /* Cambia la fuente del texto */
-  font-size: 36px; /* Ajusta el tamaño de la fuente */
-  font-weight: 500; /* Cambia el peso de la fuente */
-  margin: 0; /* Elimina márgenes externos */
-  padding: 0; /* Elimina espaciado interno */
-  color: #000000; /* Cambia el color del texto */
-  line-height: 120%;
-}
 
 .footer {
   background: #2d3047; /* Cambiado a un color más oscuro */
